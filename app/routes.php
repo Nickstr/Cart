@@ -13,30 +13,46 @@
 
 Route::get('/', function()
 {
-    $variantOne = [
+    // Product Creator
+    $productCreator = App::make('Cart\Product\ProductCreator');
+
+    // Create Product
+    $product = $productCreator->createProduct();
+
+    // Set options on product
+    $product->setOptions(['color', 'size', 'price', 'quantity']);
+
+    // Variant creator
+    $variantCreater = App::make('Cart\Product\VariantCreator');
+
+    // Create first variant
+    $variantOne = $variantCreater->createVariant($product, [
         'color'     => 'red',
         'size'      => 'xl',
         'price'     => '12.00',
         'quantity'  => '10'
-    ];
+    ]);
 
-    $variantTwo = [
+    // Create second variant
+    $variantTwo = $variantCreater->createVariant($product, [
         'color'     => 'red',
         'size'      => 'l',
-        'price'     => '11.50',
-        'quantity'  => '5'
-    ];
+        'price'     => '12.00',
+        'quantity'  => '5',
+        'penis'     => 'test'
+    ]);
 
-    $productCreator = App::make('Cart\Product\ProductCreator');
-    $product = $productCreator->createProduct();
-    $product->setOptions(['color', 'size', 'price', 'quantity']);
+    // Add variants to product
+    $product->addVariant($variantOne);
+    $product->addVariant($variantTwo);
 
-    $variantCreater = App::make('Cart\Product\VariantCreator');
+    // Return all product variants
+    $product->getVariants();
 
-    $product->addVariant($variantCreater->createVariant($product, $variantOne));
-    $product->addVariant($variantCreater->createVariant($product, $variantTwo));
-
+    // Create new product renderer
     $productRenderer = new Cart\Product\ProductRenderer($product);
 
-    dd($productRenderer->renderOptions());
+    // Render out options (color/size/etc)
+    $productRenderer->renderOptions();
+
 });

@@ -15,6 +15,12 @@ class ProductRenderer
         return $this->getOptions();
     }
 
+    public function renderOption($option)
+    {
+        $options = $this->getOptions();
+        return $options[$option];
+    }
+
     private function getOptions()
     {
         $variants = $this->product->getInStockVariants();

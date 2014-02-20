@@ -20,6 +20,11 @@ class Product
         return array_unique(array_merge($this->getBaseOptions(), $this->options));
     }
 
+    public function addOption($option)
+    {
+        array_push($this->options, $option);
+    }
+
     public function setOptions(array $options)
     {
         $this->options = array_merge($this->getOptions(), $options);
