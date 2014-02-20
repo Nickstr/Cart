@@ -4,6 +4,8 @@ use Cart\Core\Entity;
 
 class Product extends Entity
 {
+    private $options;
+
     public function variants()
     {
         return $this->hasMany('Cart\Product\Variant');
@@ -12,11 +14,6 @@ class Product extends Entity
     public function getVariants()
     {
         return $this->variants;
-    }
-
-    public function addVariant(Variant $variant)
-    {
-        $this->variants[] = $variant;
     }
 
     public function getOptions()

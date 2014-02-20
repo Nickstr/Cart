@@ -29,7 +29,16 @@
       <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="1625">
+            <state line="49" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1550">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductGetter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Product/ProductGetter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
               <folding />
             </state>
           </provider>
@@ -44,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Variant.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Variant.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Product/Variant.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5524862" vertical-offset="0" max-vertical-offset="825">
+            <state line="18" column="43" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -65,16 +74,16 @@
       <file leaf-file-name="VariantCreator.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Product/VariantCreator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="29" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="1125">
+            <state line="15" column="0" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="40" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1425">
+            <state line="36" column="4" selection-start="899" selection-end="899" vertical-scroll-proportion="0.51657456" vertical-offset="526" max-vertical-offset="1250">
               <folding />
             </state>
           </provider>
@@ -105,11 +114,12 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_02_20_141222_variants_create_table.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/src/Product/ProductCreator.php" />
-        <option value="$PROJECT_DIR$/src/Product/Product.php" />
-        <option value="$PROJECT_DIR$/src/Product/VariantCreator.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/src/Product/ProductRenderer.php" />
+        <option value="$PROJECT_DIR$/src/Product/VariantCreator.php" />
+        <option value="$PROJECT_DIR$/src/Product/ProductGetter.php" />
         <option value="$PROJECT_DIR$/src/Product/Variant.php" />
+        <option value="$PROJECT_DIR$/src/Product/Product.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -430,30 +440,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/ProductCreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/VariantCreator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="40" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1425">
+        <state line="15" column="0" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1100">
           <folding />
         </state>
       </provider>
@@ -465,9 +454,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductGetter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductCreator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/Variant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="280" selection-end="280" vertical-scroll-proportion="0.5524862" vertical-offset="0" max-vertical-offset="825">
+        <state line="18" column="43" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="4" selection-start="899" selection-end="899" vertical-scroll-proportion="0.51657456" vertical-offset="526" max-vertical-offset="1250">
           <folding />
         </state>
       </provider>

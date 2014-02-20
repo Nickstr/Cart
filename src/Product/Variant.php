@@ -19,7 +19,7 @@ class Variant extends Entity
         return json_decode($this->options);
     }
 
-    private function getOptionsAsJson()
+    public function getOptionsAsJson()
     {
         return $this->options;
     }

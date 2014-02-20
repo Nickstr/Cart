@@ -16,8 +16,7 @@ class VariantCreator
 
         $variant = new Variant;
         $variant->options = $this->getOptionsAsJson();
-
-        return $product->variants()->save($variant);
+        $product->variants()->save($variant);
     }
 
     private function getOptionsAsJson()

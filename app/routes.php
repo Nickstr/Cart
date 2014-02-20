@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
 Route::get('/', function()
 {
     // Product Creator
@@ -44,17 +33,12 @@ Route::get('/', function()
         'penis'     => 'test'
     ]);
 
-    // Add variants to product
-    $product->addVariant($variantOne);
-    $product->addVariant($variantTwo);
-
     // Return all product variants
-   // dd($product->getVariants());
+    dd($product->getVariants());
 
     // Create new product renderer
     $productRenderer = new Cart\Product\ProductRenderer($product);
 
     // Render out options (color/size/etc)
-   dd($productRenderer->renderOptions());
-
+    dd($productRenderer->renderOptions());
 });
