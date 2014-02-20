@@ -9,7 +9,7 @@ Route::get('/', function()
     $product = $productCreator->create();
 
     // Set options on product
-    $product->name = "penis pump";
+    $product->name = "Test Product";
     $product->setOptions(['color', 'size']);
     $product->save();
 
@@ -30,7 +30,7 @@ Route::get('/', function()
         'size'      => 'l',
         'price'     => '12.00',
         'quantity'  => '5',
-        'penis'     => 'test'
+        'test'     => 'test'
     ]);
 
     // Return all product variants

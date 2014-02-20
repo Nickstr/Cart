@@ -4,7 +4,7 @@ use Cart\Core\Entity;
 
 class Product extends Entity
 {
-    private $options;
+    private $baseOptions = ['price', 'quantity'];
 
     public function variants()
     {
@@ -18,7 +18,7 @@ class Product extends Entity
 
     public function getOptions()
     {
-        $baseOptions = $this->getBaseOptions();
+        $baseOptions = $this->baseOptions;
         $savedOptions = json_decode($this->options) ? json_decode($this->options) : array();
 
         return array_unique(array_merge($baseOptions, $savedOptions));
@@ -46,11 +46,5 @@ class Product extends Entity
         }
 
         return $variants;
-    }
-
-    // Private
-    private function getBaseOptions()
-    {
-        return ['price', 'quantity'];
     }
 } 
