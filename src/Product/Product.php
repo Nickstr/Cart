@@ -1,9 +1,13 @@
 <?php namespace Cart\Product;
 
-class Product
+use Cart\Core\Entity;
+
+class Product extends Entity
 {
-    private $options = [];
-    private $variants = [];
+    public function variants()
+    {
+        return $this->hasMany('Cart\Product\Variant');
+    }
 
     public function getVariants()
     {
@@ -17,17 +21,21 @@ class Product
 
     public function getOptions()
     {
-        return array_unique(array_merge($this->getBaseOptions(), $this->options));
+        $baseOptions = $this->getBaseOptions();
+        $savedOptions = json_decode($this->options) ? json_decode($this->options) : array();
+
+        return array_unique(array_merge($baseOptions, $savedOptions));
     }
 
     public function addOption($option)
     {
-        array_push($this->options, $option);
+        $this->options = array_push($this->options, $option);
+        $this->save();
     }
 
     public function setOptions(array $options)
     {
-        $this->options = array_merge($this->getOptions(), $options);
+        $this->options = json_encode(array_merge($this->getOptions(), $options));
     }
 
     public function getInStockVariants()

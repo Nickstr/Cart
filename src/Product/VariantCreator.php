@@ -3,27 +3,37 @@
 class VariantCreator
 {
     private $variant;
-    private $attributes;
+    private $options;
 
     public function __construct(Variant $variant)
     {
         $this->variant = $variant;
     }
 
-    public function createVariant(Product $product, $values)
+    public function create(Product $product, $values)
     {
-        $this->createAttributes($product, $values);
+        $this->createOptions($product, $values);
 
         $variant = new Variant;
-        $variant->setAttributes($this->attributes);
+        $variant->options = $this->getOptionsAsJson();
 
-        return $variant;
+        return $product->variants()->save($variant);
     }
 
-    private function createAttributes($product, $values)
+    private function getOptionsAsJson()
+    {
+        return json_encode($this->getOptions());
+    }
+
+    private function getOptions()
+    {
+        return $this->options;
+    }
+
+    private function createOptions($product, $values)
     {
         foreach($product->getOptions() as $option) {
-            $this->attributes[$option] = array_get($values, $option);
+            $this->options[$option] = array_get($values, $option);
         }
     }
 } 

@@ -17,16 +17,18 @@ Route::get('/', function()
     $productCreator = App::make('Cart\Product\ProductCreator');
 
     // Create Product
-    $product = $productCreator->createProduct();
+    $product = $productCreator->create();
 
     // Set options on product
-    $product->setOptions(['color', 'size', 'price', 'quantity']);
+    $product->name = "penis pump";
+    $product->setOptions(['color', 'size']);
+    $product->save();
 
     // Variant creator
     $variantCreater = App::make('Cart\Product\VariantCreator');
 
     // Create first variant
-    $variantOne = $variantCreater->createVariant($product, [
+    $variantOne = $variantCreater->create($product, [
         'color'     => 'red',
         'size'      => 'xl',
         'price'     => '12.00',
@@ -34,7 +36,7 @@ Route::get('/', function()
     ]);
 
     // Create second variant
-    $variantTwo = $variantCreater->createVariant($product, [
+    $variantTwo = $variantCreater->create($product, [
         'color'     => 'red',
         'size'      => 'l',
         'price'     => '12.00',
@@ -47,12 +49,12 @@ Route::get('/', function()
     $product->addVariant($variantTwo);
 
     // Return all product variants
-    $product->getVariants();
+   // dd($product->getVariants());
 
     // Create new product renderer
     $productRenderer = new Cart\Product\ProductRenderer($product);
 
     // Render out options (color/size/etc)
-    $productRenderer->renderOptions();
+   dd($productRenderer->renderOptions());
 
 });

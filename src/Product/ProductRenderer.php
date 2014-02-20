@@ -26,7 +26,7 @@ class ProductRenderer
         $variants = $this->product->getInStockVariants();
 
         foreach($variants as $variant) {
-            $attributes = $variant->getAttributes();
+            $attributes = $variant->getOptions();
 
             foreach($attributes as $attribute => $value) {
                 $this->options[$attribute][] = $value;

@@ -9,8 +9,8 @@ class ProductCreator
         $this->product = $product;
     }
 
-    public function createProduct()
+    public function create()
     {
-        return $this->product;
+        return new Product;
     }
 } 
