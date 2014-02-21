@@ -2,17 +2,17 @@
 
 class ItemDecorator
 {
-    private $options;
+    private $values;
 
     public function __construct(Item $item)
     {
         $this->item = $item;
-        $this->setOptions();
+        $this->setValues();
     }
 
     public function getPrice()
     {
-        return $this->options->price;
+        return $this->values->price;
     }
 
     public function getTotal()
@@ -22,16 +22,16 @@ class ItemDecorator
 
     public function getQuantity()
     {
-        return $this->options->quantity;
+        return $this->values->quantity;
     }
 
-    public function getOptions()
+    public function getValues()
     {
-        return $this->options;
+        return $this->values;
     }
 
-    private function setOptions()
+    private function setValues()
     {
-        $this->options = $this->item->getOptions();
+        $this->values = (object) $this->item->getValues();
     }
 } 

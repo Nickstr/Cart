@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="" />
+    <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="Added Item decorater test">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cart/Item.php" afterPath="$PROJECT_DIR$/src/Cart/Item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cart/ItemDecorator.php" afterPath="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php" afterPath="$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_log/codeception-2014-02-21.log" afterPath="$PROJECT_DIR$/tests/_log/codeception-2014-02-21.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="cart.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,26 +50,28 @@
       <file leaf-file-name="ItemDecorator.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="28" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="1075">
+            <state line="19" column="15" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1075">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Item.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Item.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+            <state line="14" column="5" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4834254" vertical-offset="0" max-vertical-offset="724">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemDecoratorTest.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ItemDecoratorTest.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.3107735" vertical-offset="0" max-vertical-offset="724">
-              <folding />
+            <state line="41" column="69" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1525">
+              <folding>
+                <element signature="e#23#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,9 +124,9 @@
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/src/Cart/Cart.php" />
         <option value="$PROJECT_DIR$/src/Cart/CartRenderer.php" />
-        <option value="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
-        <option value="$PROJECT_DIR$/src/Cart/Item.php" />
         <option value="$PROJECT_DIR$/tests/unit/Cart/ItemDecoraterTest.php" />
+        <option value="$PROJECT_DIR$/src/Cart/Item.php" />
+        <option value="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
         <option value="$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php" />
       </list>
     </option>
@@ -359,24 +367,24 @@
     <frame x="0" y="22" width="1440" height="821" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -394,7 +402,8 @@
     </option>
     <MESSAGE value="Various updates to codebase" />
     <MESSAGE value="Various updates to codebase&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Various updates to codebase&#10;" />
+    <MESSAGE value="Added Item decorater test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Item decorater test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -617,7 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="5" selection-start="705" selection-end="705" vertical-scroll-proportion="0.7475036" vertical-offset="126" max-vertical-offset="850">
           <folding>
-            <element signature="e#28#75#0" expanded="true" />
+            <element signature="e#28#75#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,20 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="5" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -722,16 +717,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
+    <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+        <state line="16" column="5" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.3107735" vertical-offset="0" max-vertical-offset="724">
+        <state line="41" column="69" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1525">
+          <folding>
+            <element signature="e#23#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="15" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4834254" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>

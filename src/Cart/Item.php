@@ -13,4 +13,9 @@ class Item extends Entity
     {
         return new ItemDecorator($this);
     }
+
+    public function getValues()
+    {
+        return $this->values;
+    }
 }
