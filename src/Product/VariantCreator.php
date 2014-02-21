@@ -1,25 +1,20 @@
 <?php  namespace Cart\Product; 
 
+use Cart\Product\Options\VariantOptionsFactory;
+
 class VariantCreator
 {
+    public function __construct(VariantOptionsFactory $options)
+    {
+        $this->optionsFactory = $options;
+    }
+
     public function create(Product $product, $values)
     {
-        $this->createOptions($product, $values);
+        $options = $this->optionsFactory->create($product, $values);
 
         $variant = new Variant;
-        $variant->options = $this->getOptionsAsJson();
+        $variant->setOptions($options);
         $product->variants()->save($variant);
-    }
-
-    private function getOptionsAsJson()
-    {
-        return json_encode($this->options);
-    }
-
-    private function createOptions($product, $values)
-    {
-        foreach($product->getOptions() as $option) {
-            $this->options[$option] = array_get($values, $option);
-        }
     }
 } 

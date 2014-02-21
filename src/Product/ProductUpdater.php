@@ -1,19 +1,17 @@
 <?php  namespace Cart\Product; 
 
+use Cart\Product\Options\ProductOptionsFactory;
+
 class ProductUpdater
 {
-    public function addOption(Product $product, $option)
+    public function __construct(ProductOptionsFactory $options)
     {
-        $product->addOption($option);
-        $product->save();
+        $this->optionsFactory = $options;
     }
 
     public function addOptions(Product $product, $options)
     {
-        foreach($options as $option) {
-            $product->addOption($option);
-        }
-
+        $product->setOptions($this->optionsFactory->update($product, $options));
         $product->save();
     }
 } 

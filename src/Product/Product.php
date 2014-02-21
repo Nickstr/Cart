@@ -1,6 +1,7 @@
 <?php namespace Cart\Product;
 
 use Cart\Core\Entity;
+use Cart\Product\Options\Options;
 
 class Product extends Entity
 {
@@ -19,21 +20,13 @@ class Product extends Entity
 
     public function getOptions()
     {
-        return (array) json_decode($this->options);
+        $options = (array) json_decode($this->options);
+        return $options;
     }
 
-    public function addOption($option)
+    public function setOptions(Options $options)
     {
-        $options = $this->getOptions();
-        $options[] = $option;
-
-        $this->setOptions($options);
-    }
-
-    public function setOptions(array $options)
-    {
-        $options = array_merge($this->getOptions(), $options);
-        $this->options = json_encode(array_unique($options));
+        $this->options = $options->toJson();
     }
 
     public function getInStockVariants()

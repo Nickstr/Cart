@@ -1,6 +1,7 @@
 <?php namespace Cart\Product;
 
 use Cart\Core\Entity;
+use Cart\Product\Options\Options;
 
 class Variant extends Entity
 {
@@ -16,7 +17,7 @@ class Variant extends Entity
 
     public function inStock()
     {
-        if($this->getOptions()->quantity > 0) return true;
+        if($this->getOptions()['quantity'] > 0) return true;
     }
 
     public function getOptions()
@@ -29,9 +30,9 @@ class Variant extends Entity
         return $this->options;
     }
 
-    public function setOptions(array $options)
+    public function setOptions(Options $options)
     {
-        $this->options = json_encode($options);
+        $this->options = $options->toJson();
     }
 
 } 

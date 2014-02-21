@@ -1,24 +1,17 @@
 <?php  namespace Cart\Product; 
 
+use Cart\Product\Options\VariantOptionsFactory;
+
 class VariantUpdater
 {
-    public function update(Variant $variant, array $values)
+    public function __construct(VariantOptionsFactory $options)
     {
-        $variant->setOptions($this->createOptions($variant, $values));
-        $variant->save();
+        $this->optionsFactory = $options;
     }
 
-    private function createOptions(Variant $variant, $values)
+    public function update(Variant $variant, array $values)
     {
-        $currentOptions = $variant->getOptions();
-        $options = [];
-        
-        foreach($variant->product->getOptions() as $option) {
-            if(in_array($option, $values)) {
-                $options[$option] = array_get($values, $option);
-            }
-        }
-
-        return array_merge($currentOptions, $options);
+        $variant->setOptions($this->optionsFactory->update($variant, $values));
+        $variant->save();
     }
 } 

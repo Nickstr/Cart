@@ -51,7 +51,7 @@ Route::get('/update/{id}', function($id)
     $variantUpdater = App::make('Cart\Product\VariantUpdater');
 
     foreach($product->variants as $variant) {
-        $variantUpdater->update($variant, ['height' => '200']);
+        $variantUpdater->update($variant, ['height' => '200', 'price' => '13.37']);
     }
 });
 
