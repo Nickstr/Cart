@@ -4,7 +4,7 @@ class Options
 {
     private $options;
 
-    public function __construct($options)
+    public function __construct(array $options)
     {
         $this->options = $options;
     }

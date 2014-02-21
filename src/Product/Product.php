@@ -24,6 +24,11 @@ class Product extends Entity
         return $options;
     }
 
+    public function getBaseOptions()
+    {
+        return $this->baseOptions;
+    }
+
     public function setOptions(Options $options)
     {
         $this->options = $options->toJson();

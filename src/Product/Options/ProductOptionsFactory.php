@@ -11,7 +11,7 @@ class ProductOptionsFactory
 
     public function create($options)
     {
-        return new Options($this->getUnique($this->product->baseOptions, $options));
+        return new Options($this->getUnique($this->product->getBaseOptions(), $options));
     }
 
     public function update(Product $product, $options)

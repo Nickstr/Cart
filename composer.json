@@ -6,6 +6,13 @@
 	"require": {
 		"laravel/framework": "4.1.*"
 	},
+
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "codeception/codeception": "*",
+        "codeception/aspect-mock": "*"
+    },
+
 	"autoload": {
 		"classmap": [
 			"app/commands",
