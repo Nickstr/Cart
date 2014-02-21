@@ -44,6 +44,15 @@ class ItemDecoratorTest extends \TestCase
         $this->assertEquals('66.65', $decoratedItem->getTotal());
     }
 
+    public function testCanGetValue()
+    {
+        $item = Mockery::mock('Cart\Cart\Item');
+        $item->shouldReceive('getValues')->andReturn(['cat' => 'meow']);
+
+        $decoratedItem = $this->createItemDecorator($item);
+        $this->assertEquals('meow', $decoratedItem->getValue('cat'));
+    }
+
     private function createItemDecorator($item = null)
     {
         if(! $item) {

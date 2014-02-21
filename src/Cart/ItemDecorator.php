@@ -1,4 +1,4 @@
-<?php  namespace Cart\Cart; 
+<?php namespace Cart\Cart;
 
 class ItemDecorator
 {
@@ -30,8 +30,13 @@ class ItemDecorator
         return $this->values;
     }
 
+    public function getValue($value)
+    {
+        return $this->values->$value;
+    }
+
     private function setValues()
     {
         $this->values = (object) $this->item->getValues();
     }
-} 
+}

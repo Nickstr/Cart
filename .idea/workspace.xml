@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="Added Item decorater test">
+    <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cart/Cart.php" afterPath="$PROJECT_DIR$/src/Cart/Cart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cart/CartRenderer.php" afterPath="$PROJECT_DIR$/src/Cart/CartRenderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Entity.php" afterPath="$PROJECT_DIR$/src/Core/Entity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cart/Item.php" afterPath="$PROJECT_DIR$/src/Cart/Item.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cart/ItemDecorator.php" afterPath="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php" afterPath="$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Exceptions/NoValidationRulesFoundException.php" afterPath="$PROJECT_DIR$/src/Core/Exceptions/NoValidationRulesFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Exceptions/NoValidatorInstantiatedException.php" afterPath="$PROJECT_DIR$/src/Core/Exceptions/NoValidatorInstantiatedException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/Options/Options.php" afterPath="$PROJECT_DIR$/src/Product/Options/Options.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/ProductCreator.php" afterPath="$PROJECT_DIR$/src/Product/ProductCreator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/ProductGetter.php" afterPath="$PROJECT_DIR$/src/Product/ProductGetter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php" afterPath="$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/ProductRenderer.php" afterPath="$PROJECT_DIR$/src/Product/ProductRenderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/ProductUpdater.php" afterPath="$PROJECT_DIR$/src/Product/ProductUpdater.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/VariantCreator.php" afterPath="$PROJECT_DIR$/src/Product/VariantCreator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/Options/VariantOptionsFactory.php" afterPath="$PROJECT_DIR$/src/Product/Options/VariantOptionsFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/VariantUpdater.php" afterPath="$PROJECT_DIR$/src/Product/VariantUpdater.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_log/codeception-2014-02-21.log" afterPath="$PROJECT_DIR$/tests/_log/codeception-2014-02-21.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cart.iws" />
@@ -28,55 +43,7 @@
     <favorites_list name="cart" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Cart.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="5" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CartRenderer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemDecorator.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="15" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4834254" vertical-offset="0" max-vertical-offset="724">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemDecoratorTest.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="69" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1525">
-              <folding>
-                <element signature="e#23#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -109,7 +76,6 @@
         <option value="$PROJECT_DIR$/src/Product/ProductUpdater.php" />
         <option value="$PROJECT_DIR$/src/Product/Variant.php" />
         <option value="$PROJECT_DIR$/tests/_bootstrap.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Product/Product.php" />
         <option value="$PROJECT_DIR$/tests/unit/_bootstrap.php" />
         <option value="$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php" />
@@ -122,12 +88,13 @@
         <option value="$PROJECT_DIR$/tests/unit/Product/ProductCreatorTest.php" />
         <option value="$PROJECT_DIR$/src/Categories/Category.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
-        <option value="$PROJECT_DIR$/src/Cart/Cart.php" />
-        <option value="$PROJECT_DIR$/src/Cart/CartRenderer.php" />
         <option value="$PROJECT_DIR$/tests/unit/Cart/ItemDecoraterTest.php" />
         <option value="$PROJECT_DIR$/src/Cart/Item.php" />
-        <option value="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
         <option value="$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php" />
+        <option value="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
+        <option value="$PROJECT_DIR$/src/Cart/CartRenderer.php" />
+        <option value="$PROJECT_DIR$/src/Cart/Cart.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -249,6 +216,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -264,7 +235,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cart" />
+              <option name="myItemId" value="Product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modifiers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,12 +349,16 @@
       <created>1393011650403</created>
       <updated>1393011650403</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Item decorator test">
+      <created>1393014631083</created>
+      <updated>1393014631083</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="821" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -378,7 +371,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -403,7 +396,8 @@
     <MESSAGE value="Various updates to codebase" />
     <MESSAGE value="Various updates to codebase&#10;" />
     <MESSAGE value="Added Item decorater test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Item decorater test" />
+    <MESSAGE value="Added Item decorator test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Item decorator test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -527,15 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/Variant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="40" selection-start="378" selection-end="378" vertical-scroll-proportion="0.13674033" vertical-offset="376" max-vertical-offset="1100">
-          <folding>
-            <element signature="e#31#52#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/_helpers/CodeHelper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="724">
@@ -571,23 +556,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.2762431" vertical-offset="0" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/_bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="27" selection-start="79" selection-end="97" vertical-scroll-proportion="0.14265335" vertical-offset="0" max-vertical-offset="701">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="587" selection-end="587" vertical-scroll-proportion="0.51657456" vertical-offset="301" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
@@ -654,23 +625,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/VariantCreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="49" selection-start="456" selection-end="456" vertical-scroll-proportion="0.5524862" vertical-offset="0" max-vertical-offset="724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/Options/VariantOptionsFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="46" selection-start="1067" selection-end="1077" vertical-scroll-proportion="1.0690608" vertical-offset="201" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/ProductCreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="192" selection-end="192" vertical-scroll-proportion="0.2417127" vertical-offset="0" max-vertical-offset="725">
           <folding />
         </state>
       </provider>
@@ -710,39 +667,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
+    <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="10" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.34530386" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
+    <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="9" column="27" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/unit/Cart/ItemDecoratorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="69" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1525">
-          <folding>
-            <element signature="e#23#42#0" expanded="true" />
-          </folding>
+        <state line="2" column="19" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1750">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="15" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1075">
+        <state line="7" column="6" selection-start="179" selection-end="179" vertical-scroll-proportion="-0.5883978" vertical-offset="601" max-vertical-offset="1325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Variant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="40" selection-start="378" selection-end="378" vertical-scroll-proportion="0.64194006" vertical-offset="0" max-vertical-offset="1075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductCreator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="190" selection-end="190" vertical-scroll-proportion="0.24964337" vertical-offset="0" max-vertical-offset="725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="141" selection-end="141" vertical-scroll-proportion="0.2762431" vertical-offset="0" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="34" selection-start="587" selection-end="587" vertical-scroll-proportion="0.06767956" vertical-offset="626" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Modifiers/Tax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/VariantCreator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="454" selection-end="454" vertical-scroll-proportion="0.5524862" vertical-offset="0" max-vertical-offset="724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Modifiers/Discount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="701">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Modifiers/Coupon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="701">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Modifiers/Shipping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="701">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4834254" vertical-offset="0" max-vertical-offset="724">
+        <state line="13" column="35" selection-start="242" selection-end="242" vertical-scroll-proportion="0.44889504" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>

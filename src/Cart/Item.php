@@ -1,4 +1,4 @@
-<?php  namespace Cart\Cart; 
+<?php namespace Cart\Cart;
 
 use Cart\Core\Entity;
 

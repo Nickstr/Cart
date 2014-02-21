@@ -1,3 +1,3 @@
-<?php  namespace Cart\Core\Exceptions;
+<?php namespace Cart\Core\Exceptions;
 
 class NoValidatorInstantiatedException extends \Exception {}

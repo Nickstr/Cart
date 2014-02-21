@@ -1,4 +1,4 @@
-<?php  namespace Cart\Core;
+<?php namespace Cart\Core;
 
 use Validator, Eloquent;
 use Lio\Core\Exceptions\NoValidationRulesFoundException;

@@ -8,4 +8,19 @@ class Cart extends Entity
     {
         return $this->hasMany('Cart\Cart\Item');
     }
+
+    public function subTotal()
+    {
+
+    }
+
+    public function total()
+    {
+
+    }
+
+    public function quantity()
+    {
+
+    }
 } 

@@ -1,4 +1,4 @@
-<?php  namespace Cart\Product\Options; 
+<?php namespace Cart\Product\Options;
 
 class Options
 {

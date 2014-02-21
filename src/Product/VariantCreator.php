@@ -1,4 +1,4 @@
-<?php  namespace Cart\Product; 
+<?php namespace Cart\Product;
 
 use Cart\Product\Options\VariantOptionsFactory;
 
