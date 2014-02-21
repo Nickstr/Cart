@@ -6,26 +6,21 @@ Route::get('/', function()
     $productCreator = App::make('Cart\Product\ProductCreator');
 
     // Create Product
-    $product = $productCreator->create();
-
-    // Set options on product
-    $product->name = "Test Product";
-    $product->setOptions(['color', 'size']);
-    $product->save();
+    $product = $productCreator->create(['color', 'size']);
 
     // Variant creator
-    $variantCreater = App::make('Cart\Product\VariantCreator');
+    $variantCreator = App::make('Cart\Product\VariantCreator');
 
     // Create first variant
-    $variantOne = $variantCreater->create($product, [
+    $variantCreator->create($product, [
         'color'     => 'red',
         'size'      => 'xl',
-        'price'     => '12.00',
+        'price'     => '15.50',
         'quantity'  => '10'
     ]);
 
     // Create second variant
-    $variantTwo = $variantCreater->create($product, [
+    $variantCreator->create($product, [
         'color'     => 'red',
         'size'      => 'l',
         'price'     => '12.00',
@@ -42,3 +37,22 @@ Route::get('/', function()
     // Render out options (color/size/etc)
     dd($productRenderer->renderOptions());
 });
+
+
+Route::get('/update/{id}', function($id)
+{
+    // Product Creator
+    $productGetter = App::make('Cart\Product\ProductGetter');
+    $product = $productGetter->get($id);
+
+    $productUpdater = App::make('Cart\Product\ProductUpdater');
+    $productUpdater->addOptions($product, ['height', 'width', 'whatever']);
+
+    $variantUpdater = App::make('Cart\Product\VariantUpdater');
+
+    foreach($product->variants as $variant) {
+        $variantUpdater->update($variant, ['height' => '200']);
+    }
+});
+
+

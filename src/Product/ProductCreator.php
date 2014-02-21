@@ -9,8 +9,21 @@ class ProductCreator
         $this->product = $product;
     }
 
-    public function create()
+    public function create($options)
     {
-        return new Product;
+        $options = $this->createOptions($options);
+
+        $product = new Product;
+        $product->setOptions($options);
+        $product->save();
+
+        return $product;
+    }
+
+    private function createOptions($options)
+    {
+        $baseOptions = $this->product->baseOptions;
+        $mergedArray = array_merge($options, $baseOptions);
+        return array_unique($mergedArray);
     }
 } 

@@ -2,14 +2,6 @@
 
 class VariantCreator
 {
-    private $variant;
-    private $options;
-
-    public function __construct(Variant $variant)
-    {
-        $this->variant = $variant;
-    }
-
     public function create(Product $product, $values)
     {
         $this->createOptions($product, $values);
@@ -21,12 +13,7 @@ class VariantCreator
 
     private function getOptionsAsJson()
     {
-        return json_encode($this->getOptions());
-    }
-
-    private function getOptions()
-    {
-        return $this->options;
+        return json_encode($this->options);
     }
 
     private function createOptions($product, $values)
