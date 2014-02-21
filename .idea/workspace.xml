@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cart.iml" afterPath="$PROJECT_DIR$/.idea/cart.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/Options/Options.php" afterPath="$PROJECT_DIR$/src/Product/Options/Options.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/Product.php" afterPath="$PROJECT_DIR$/src/Product/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php" afterPath="$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/ProductCreator.php" afterPath="$PROJECT_DIR$/src/Product/ProductCreator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Product/VariantCreator.php" afterPath="$PROJECT_DIR$/src/Product/VariantCreator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_log/codeception-2014-02-21.log" afterPath="$PROJECT_DIR$/tests/_log/codeception-2014-02-21.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cart.iws" />
@@ -30,30 +28,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProductOptionsFactoryTest.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/unit/Product/Options/ProductOptionsFactoryTest.php">
+      <file leaf-file-name="Cart.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="178" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-              <folding>
-                <element signature="e#34#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OptionsTest.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/unit/Product/Options/OptionsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="67" selection-start="660" selection-end="660" vertical-scroll-proportion="0.8287293" vertical-offset="0" max-vertical-offset="950">
+            <state line="9" column="5" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Options.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Product/Options/Options.php">
+      <file leaf-file-name="CartRenderer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="16" column="5" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemDecorator.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="28" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="1075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="40" selection-start="249" selection-end="249" vertical-scroll-proportion="0.44889504" vertical-offset="0" max-vertical-offset="724">
               <folding />
             </state>
           </provider>
@@ -73,7 +78,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Vagrantfile" />
-        <option value="$PROJECT_DIR$/src/Cart/Cart.php" />
         <option value="$PROJECT_DIR$/src/Cart/Variant.php" />
         <option value="$PROJECT_DIR$/src/Cart/Product.php" />
         <option value="$PROJECT_DIR$/src/Core/Entity.php" />
@@ -87,11 +91,9 @@
         <option value="$PROJECT_DIR$/src/Product/VariantUpdate.php" />
         <option value="$PROJECT_DIR$/src/Product/Options/ProductOptionsGenerator.php" />
         <option value="$PROJECT_DIR$/src/Product/Options/VariantOptionsGenerator.php" />
-        <option value="$PROJECT_DIR$/src/Product/VariantCreator.php" />
         <option value="$PROJECT_DIR$/src/Product/VariantUpdater.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/src/Product/Options/VariantOptionsFactory.php" />
-        <option value="$PROJECT_DIR$/src/Product/ProductCreator.php" />
         <option value="$PROJECT_DIR$/src/Product/ProductUpdater.php" />
         <option value="$PROJECT_DIR$/src/Product/Variant.php" />
         <option value="$PROJECT_DIR$/tests/_bootstrap.php" />
@@ -103,6 +105,15 @@
         <option value="$PROJECT_DIR$/tests/unit/Product/Options/VariantOptionsFactoryTest.php" />
         <option value="$PROJECT_DIR$/src/Product/Options/Options.php" />
         <option value="$PROJECT_DIR$/tests/unit/Product/Options/OptionsTest.php" />
+        <option value="$PROJECT_DIR$/src/Product/ProductCreator.php" />
+        <option value="$PROJECT_DIR$/src/Product/VariantCreator.php" />
+        <option value="$PROJECT_DIR$/tests/unit/Product/ProductCreatorTest.php" />
+        <option value="$PROJECT_DIR$/src/Categories/Category.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
+        <option value="$PROJECT_DIR$/src/Cart/Cart.php" />
+        <option value="$PROJECT_DIR$/src/Cart/CartRenderer.php" />
+        <option value="$PROJECT_DIR$/src/Cart/ItemDecorator.php" />
+        <option value="$PROJECT_DIR$/src/Cart/Item.php" />
       </list>
     </option>
   </component>
@@ -167,51 +178,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Options" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -229,7 +196,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Product" />
+              <option name="myItemId" value="Cart" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,15 +210,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Options" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,7 +224,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="start" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,6 +261,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="" />
@@ -311,16 +291,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -433,11 +413,6 @@
         <state line="2" column="60" selection-start="100" selection-end="100" vertical-scroll-proportion="0.07132667" vertical-offset="0" max-vertical-offset="701" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="56" selection-start="135" selection-end="167" vertical-scroll-proportion="0.13812155" vertical-offset="0" max-vertical-offset="1725" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vagrantfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="51" selection-start="1368" selection-end="1376" vertical-scroll-proportion="0.73738873" vertical-offset="403" max-vertical-offset="1425" />
@@ -470,25 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/VariantUpdater.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="289" selection-end="289" vertical-scroll-proportion="0.42796007" vertical-offset="0" max-vertical-offset="701" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/VariantCreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="0.49928674" vertical-offset="0" max-vertical-offset="701">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/ProductRenderer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="46" selection-start="600" selection-end="600" vertical-scroll-proportion="0.6906077" vertical-offset="200" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/Variant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="40" selection-start="378" selection-end="378" vertical-scroll-proportion="0.13674033" vertical-offset="376" max-vertical-offset="1100">
@@ -496,25 +452,6 @@
             <element signature="e#31#52#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/ProductCreator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="307" selection-end="307" vertical-scroll-proportion="0.44889504" vertical-offset="0" max-vertical-offset="724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/ProductGetter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.41436464" vertical-offset="0" max-vertical-offset="724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/ProductUpdater.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="50" selection-start="339" selection-end="339" vertical-scroll-proportion="0.44889504" vertical-offset="0" max-vertical-offset="724" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/_helpers/CodeHelper.php">
@@ -566,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="15" selection-start="563" selection-end="563" vertical-scroll-proportion="0.7941989" vertical-offset="0" max-vertical-offset="800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="34" selection-start="587" selection-end="587" vertical-scroll-proportion="0.51657456" vertical-offset="301" max-vertical-offset="1350">
@@ -589,6 +519,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="56" selection-start="135" selection-end="167" vertical-scroll-proportion="-1.2444751" vertical-offset="1001" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Options/Options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="174" selection-end="174" vertical-scroll-proportion="0.32097003" vertical-offset="0" max-vertical-offset="701">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/VariantUpdater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="289" selection-end="289" vertical-scroll-proportion="0.42796007" vertical-offset="0" max-vertical-offset="701">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/Product/ProductCreatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="705" selection-end="705" vertical-scroll-proportion="0.7475036" vertical-offset="126" max-vertical-offset="850">
+          <folding>
+            <element signature="e#28#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/Product/Options/OptionsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="4" selection-start="674" selection-end="774" vertical-scroll-proportion="0.62016577" vertical-offset="226" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Options/ProductOptionsFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="15" selection-start="563" selection-end="563" vertical-scroll-proportion="0.769337" vertical-offset="18" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/unit/Product/Options/ProductOptionsFactoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="4" selection-start="1414" selection-end="1596" vertical-scroll-proportion="0.51657456" vertical-offset="626" max-vertical-offset="1350">
+          <folding>
+            <element signature="e#34#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/VariantCreator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="456" selection-end="456" vertical-scroll-proportion="0.5524862" vertical-offset="0" max-vertical-offset="724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/Options/VariantOptionsFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="46" selection-start="1067" selection-end="1077" vertical-scroll-proportion="1.0690608" vertical-offset="201" max-vertical-offset="1350">
@@ -596,25 +586,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/Product/Options/ProductOptionsFactoryTest.php">
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductCreator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="178" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding>
-            <element signature="e#34#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/Options/Options.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+        <state line="7" column="5" selection-start="192" selection-end="192" vertical-scroll-proportion="0.2417127" vertical-offset="0" max-vertical-offset="725">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/Product/Options/OptionsTest.php">
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductGetter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="67" selection-start="660" selection-end="660" vertical-scroll-proportion="0.8287293" vertical-offset="0" max-vertical-offset="950">
+        <state line="12" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="0.41436464" vertical-offset="0" max-vertical-offset="724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Categories/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.37983426" vertical-offset="0" max-vertical-offset="724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductRenderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="45" selection-start="709" selection-end="709" vertical-scroll-proportion="1.070442" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/ProductUpdater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="223" selection-end="223" vertical-scroll-proportion="0.34530386" vertical-offset="0" max-vertical-offset="724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.034530386" vertical-offset="0" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/CartRenderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/ItemDecorator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cart/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="249" selection-end="249" vertical-scroll-proportion="0.44889504" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>
