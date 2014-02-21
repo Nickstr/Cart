@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4b766498-2641-43bc-b244-b2719a316737" name="Default" comment="" />
     <ignored path="cart.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -350,7 +348,11 @@
       <created>1393011273062</created>
       <updated>1393011273062</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Various updates to codebase&#10;">
+      <created>1393011650403</created>
+      <updated>1393011650403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -391,7 +393,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Various updates to codebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Various updates to codebase" />
+    <MESSAGE value="Various updates to codebase&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Various updates to codebase&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
