@@ -16,6 +16,7 @@ class VariantsCreateTable extends Migration {
             $table->increments('id');
             $table->string('name');
             $table->text('options');
+            $table->text('modifiers');
             $table->timestamps();
             $table->softDeletes();
         });

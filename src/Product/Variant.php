@@ -10,6 +10,11 @@ class Variant extends Entity
         return $this->belongsTo('Cart\Product\Product');
     }
 
+    public function decorate()
+    {
+        return new VariantDecorator($this);
+    }
+
     public function getAttributes()
     {
         return $this->attributes;
@@ -34,5 +39,16 @@ class Variant extends Entity
     {
         $this->options = $options->toJson();
     }
+
+    public function hasModifiers()
+    {
+        return $this->modifiers;
+    }
+
+    public function getPrice()
+    {
+        return $this->getOptions()['price'];
+    }
+
 
 } 

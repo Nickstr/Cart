@@ -11,4 +11,4 @@ class ProductGetter
     {
         return $this->product->where('id', '=', $id)->first();
     }
-} 
+}
